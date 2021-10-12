@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/128/4090/premium/4090395.png?token=exp=1633710869~hmac=644cbbb64709723a81b96892ac973cd9" type="image/x-icon">
+    <link rel="shortcut icon"
+        href="https://cdn-icons.flaticon.com/png/128/4090/premium/4090395.png?token=exp=1633710869~hmac=644cbbb64709723a81b96892ac973cd9"
+        type="image/x-icon">
     <title>Backtrack</title>
 </head>
 
@@ -39,7 +41,8 @@
     <p>
         This needs an example.
     </p>
-    <img class="center" src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/treesearch.gif" alt="">
+    <img class="center" src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/treesearch.gif"
+        alt="">
     <ol>
         <li>
             Starting at Root, your options are A and B. You choose A.
@@ -257,7 +260,8 @@
         node might or might not be a goal node, and will contain its name. The first example in this paper (which we
         repeat here) shows a binary tree.
     </p>
-    <img class="center" src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/treesearch.gif" alt="">
+    <img class="center" src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/treesearch.gif"
+        alt="">
     <p>Here's a definition of the BinaryTree class:
 
     </p>
@@ -838,23 +842,26 @@ static boolean no(BinaryTree node) {
 
 </p>
 <pre>
+    
+    <i><font color="#0000ff">1</font> </i> <b><font color="#00000">BLACK  BLACK  BLACK  _____  WHITE  WHITE  WHITE</font></b> 
+    <i><font color="#0000ff">2</font> </i> <b><font color="#00000">BLACK  BLACK  _____  BLACK  WHITE  WHITE  WHITE</font></b> 
+    <i><font color="#0000ff">3</font> </i> <b><font color="#00000">BLACK  BLACK  WHITE  BLACK  _____  WHITE  WHITE</font></b> 
+    <i><font color="#0000ff">4</font> </i> <b><font color="#00000">BLACK  BLACK  WHITE  BLACK  WHITE  _____  WHITE</font></b> 
+    <i><font color="#0000ff">5</font> </i> <b><font color="#00000">BLACK  BLACK  WHITE  _____  WHITE  BLACK  WHITE</font></b> 
+    <i><font color="#0000ff">6</font> </i> <b><font color="#00000">BLACK  _____  WHITE  BLACK  WHITE  BLACK  WHITE</font></b> 
+    <i><font color="#0000ff">7</font> </i> <b><font color="#00000">_____  BLACK  WHITE  BLACK  WHITE  BLACK  WHITE</font></b> 
+    <i><font color="#0000ff">8</font> </i> <b><font color="#00000">WHITE  BLACK  _____  BLACK  WHITE  BLACK  WHITE</font></b> 
+    <i><font color="#0000ff">9</font> </i> <b><font color="#00000">WHITE  BLACK  WHITE  BLACK  _____  BLACK  WHITE</font></b> 
+    <i><font color="#0000ff">10</font> </i><b><font color="#00000">WHITE  BLACK  WHITE  BLACK  WHITE  BLACK  _____</font></b> 
+    <i><font color="#0000ff">11</font> </i><b><font color="#00000">WHITE  BLACK  WHITE  BLACK  WHITE  _____  BLACK</font></b> 
+    <i><font color="#0000ff">12</font> </i><b><font color="#00000">WHITE  BLACK  WHITE  _____  WHITE  BLACK  BLACK</font></b> 
+    <i><font color="#0000ff">13</font> </i><b><font color="#00000">WHITE  _____  WHITE  BLACK  WHITE  BLACK  BLACK</font></b> 
+    <i><font color="#0000ff">14</font> </i><b><font color="#00000">WHITE  WHITE  _____  BLACK  WHITE  BLACK  BLACK</font></b> 
+    <i><font color="#0000ff">15</font> </i><b><font color="#00000">WHITE  WHITE  WHITE  BLACK  _____  BLACK  BLACK</font></b> 
+    <i><font color="#0000ff">16</font> </i><b><font color="#00000">WHITE  WHITE  WHITE  _____  BLACK  BLACK  BLACK</font></b> 
+    
+        
 
-16.  WHITE  WHITE  WHITE  _____  BLACK  BLACK  BLACK
-15.  WHITE  WHITE  WHITE  BLACK  _____  BLACK  BLACK
-14.  WHITE  WHITE  _____  BLACK  WHITE  BLACK  BLACK
-13.  WHITE  _____  WHITE  BLACK  WHITE  BLACK  BLACK
-12.  WHITE  BLACK  WHITE  _____  WHITE  BLACK  BLACK
-11.  WHITE  BLACK  WHITE  BLACK  WHITE  _____  BLACK
-10. WHITE  BLACK  WHITE  BLACK  WHITE  BLACK  _____
- 9.  WHITE  BLACK  WHITE  BLACK  _____  BLACK  WHITE
- 8.  WHITE  BLACK  _____  BLACK  WHITE  BLACK  WHITE
- 7.  _____  BLACK  WHITE  BLACK  WHITE  BLACK  WHITE
- 6.  BLACK  _____  WHITE  BLACK  WHITE  BLACK  WHITE
- 5.  BLACK  BLACK  WHITE  _____  WHITE  BLACK  WHITE
- 4.  BLACK  BLACK  WHITE  BLACK  WHITE  _____  WHITE
- 3.  BLACK  BLACK  WHITE  BLACK  _____  WHITE  WHITE
- 2.  BLACK  BLACK  _____  BLACK  WHITE  WHITE  WHITE
- 1.  BLACK  BLACK  BLACK  _____  WHITE  WHITE  WHITE
 </pre>
 <p>
     Notice that the solution is given in reverse order: BLACK starts out on the left and WHITE on the right, as in the
