@@ -16,6 +16,12 @@
     -webkit-overflow-scrolling: touch;
 }
 
+.slides img{
+    object-fit: cover;
+    height: 30rem;
+    width: 30rem;
+}
+
 .slides::-webkit-scrollbar{
     width: 10px;
     height: 10px;
